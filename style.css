@@ -9,7 +9,6 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
 }
 
 nav,
@@ -70,8 +69,8 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  gap: 16px;
-  padding: 16px 16px;
+  gap: 220px;
+  padding: 16px 130px;
 }
 
 .hero img {
