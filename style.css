@@ -18,12 +18,6 @@ footer {
   background-color: #1f2937;
 }
 
-h1 {
-  font-size: 48px;
-  color: #f9faf8;
-  font-weight: 900;
-}
-
 /* NAVBAR */
 
 nav {
@@ -43,6 +37,7 @@ nav ul {
   display: flex;
   gap: 16px;
   margin-right: 8px;
+  font-size: 18px;
 }
 
 a {
@@ -52,6 +47,12 @@ a {
 
 /* HERO */
 
+h1 {
+  font-size: 48px;
+  color: #f9faf8;
+  font-weight: 900;
+}
+
 .hero p {
   color: #e5e7eb;
   font-size: 18px;
@@ -60,15 +61,34 @@ a {
 .hero-text {
   display: flex;
   flex-direction: column;
+  gap: 16px;
+  width: 300px;
+  flex: 1;
 }
 
 .hero {
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 16px 16px;
 }
 
 .hero img {
-  width: 1200px;
+  max-width: 400px;
+  flex-grow: 3;
+}
+
+button {
+  width: 150px;
+  min-width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  border: 0;
+  background-color: #3882f6;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 /* MAIN */
@@ -82,20 +102,93 @@ a {
 .product-categories {
   display: flex;
   gap: 16px;
+  padding-bottom: 64px;
 }
 
 .product-category img {
   width: 200px;
   height: 180px;
-  object-fit: cover;
+  object-fit: fill;
+  border: 3px solid #3882f6;
+  border-radius: 10px;
+}
+
+.product-category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.product-category p {
+  text-align: center;
+}
+
+.categories {
+  padding: 32px;
 }
 
 /* QUOTE */
 
+.quote {
+  background-color: #e5e7eb;
+  padding: 70px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  justify-content: center;
+  /* align-items: center; */
+  color: #1f2937;
+}
+
+.quote p {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.quote h5 {
+  text-align: end;
+  font-size: 20px;
+}
+
+/* CTA */
+
+.CTA {
+  background-color: #3882f6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 36px;
+  color: white;
+  padding: 36px 64px;
+  margin: 80px 120px;
+  border-radius: 10px;
+}
+
+.CTA-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.CTA-txt h4 {
+  font-size: 24px;
+}
+
+.CTA button {
+  border: 2px solid white;
+}
+
 /* FOOTER */
 
-/* to send footer at the bottom of the screen */
-
-.quote {
-  margin: auto;
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  color: #e5e7eb;
+  margin-top: auto;
 }
